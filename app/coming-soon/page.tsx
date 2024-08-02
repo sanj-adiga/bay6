@@ -5,9 +5,6 @@ import {Button} from "@nextui-org/react";
 const page = () => {
   return ( 
     <div >
-      
-    
-
     <div className="flex justify-center items-center">
       <h1 className="font-serif">coming soon...</h1>
     </div>

@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import React from 'react'
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
-import Header from './components/header';
+import React, { createContext, useEffect} from 'react'
+import { motion, Variants } from "framer-motion";
 import Welcome from './components/welcome';
 import About from './sections/about';
 import Mission from './sections/mission';
@@ -12,10 +11,9 @@ import Contact from './sections/contact';
 export default function Home() {
   return (
     <div>
-      <Header/>
       <Welcome/>
       <About/>
-      <Mission/>
+      <Mission isVisible={false}/>
       <Design/>
       <Blog/>
       <Contact/>

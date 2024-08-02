@@ -1,7 +1,7 @@
 import React from 'react'
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 import Image from 'next/image';
-
+import About from '../sections/about';
 
 export default function Header() {
   return (
@@ -30,6 +30,7 @@ export default function Header() {
           </NavbarItem>
         </NavbarContent>
       </Navbar>
+      
 
     )
 }

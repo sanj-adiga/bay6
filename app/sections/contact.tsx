@@ -15,3 +15,8 @@ export default function Contact() {
     </div>
   )
 }
+
+
+// Newsletter Email:
+// bay6newsletter@gmail.com
+// Password: bay6b*tch!

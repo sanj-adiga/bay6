@@ -1,6 +1,11 @@
 import { Button, Input } from '@nextui-org/react'
 import Image from 'next/image'
-import React from 'react'
+import Link from 'next/link'
+import React, { useEffect} from 'react'
+import Embed from '../components/embed'
+
+
+
 
 export default function Blog() {
   return (
@@ -10,8 +15,12 @@ export default function Blog() {
       <p>Email Address</p>
       <Input>Enter your email</Input>
       <Button href={"/sections/about"}>Sign up</Button>{/* figure out navigation */}
-      <Image src={"/arrow"} alt='arrow' width={100} height={100}></Image> {/* get filler images*/}
-
+      <div className="substack-post-embed">
+        <p lang="en">Welcome to Bay6! by bay6</p>
+        <p>where we're not your basic b****</p>
+        <Link data-post-link href="https://bay6.substack.com/p/welcome">Read on Substack</Link>
+        <Embed />
+      </div>
     </div>
   )
 }
