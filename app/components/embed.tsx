@@ -18,7 +18,7 @@ const Embed = () => {
   }, []);
 
   return (
-    <div>
+    <div className="embedding">
       {/* Add any HTML or content here */}
       <div id="substack-embed-container"></div>
     </div>

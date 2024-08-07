@@ -1,12 +1,22 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Libre_Baskerville, Inter } from 'next/font/google';
+import localFont from 'next/font/local'
 import Header from './components/header'
 import Footer from './components/footer'
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
 
-const inter = Inter({ subsets: ['latin'] })
+const libreBaskerville = Libre_Baskerville({
+  weight: ['400', '700'], 
+  subsets: ['latin'],
+});
+
+const inter = Inter({
+  subsets: ['latin']
+})
+
+const gistesy = localFont({src: '/ui/Gistesy.ttf'})
 
 export const metadata: Metadata = {
   title: 'Bay6 Website',
@@ -20,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
-      <body className={inter.className}>
+      <body className={libreBaskerville.className}>
         <Header/> 
         {children}
         <Footer/>
